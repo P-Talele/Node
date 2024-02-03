@@ -1,5 +1,5 @@
 const app = require('./app.js')
-
+const fs=require('fs')
 
 var num1=10
 let num2=20
@@ -53,3 +53,6 @@ arr.filter((element)=>{
 console.log("Check how many Time of Repeat 3= "+result)
 
   
+
+fs.writeFileSync("hallo.txt","how many type inheritance in java ")  // local module 
+ console.log(" how many type inheritance in java ")// Global module 
