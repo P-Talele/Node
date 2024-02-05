@@ -55,7 +55,7 @@ function call()
         },2000)
 
        setTimeout(()=>{                              // third executed
-       console.log("third log")
+         console.log("third log")
         },0)
 
          console.log("fouth log")                      // second execute
