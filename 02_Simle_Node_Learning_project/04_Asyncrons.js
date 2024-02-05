@@ -7,7 +7,6 @@ console.log("Car Fast");
 
 
 console.log("***********Second***********")
-
 console.log("Car Start");
 console.log("Car Fast");
 setTimeout(()=>{
