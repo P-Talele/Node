@@ -23,7 +23,7 @@ getconnection()
   })
 
   getData()
- getData().then((res)=>{                                              // Using Promise   for get All Data from Databases
+ getData().then((res)=>{                                                      // Using Promise   for get All Data from Databases
 
                   res.find({}).toArray().then((data)=>{
                   console.log(data)
