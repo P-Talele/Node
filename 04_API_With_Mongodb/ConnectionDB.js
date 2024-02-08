@@ -4,8 +4,8 @@ const  client=new MongoClient('mongodb://127.0.0.1:27017')
 async function getconnection()
 {
      
-     let result= await client.connect();
-     let db=result.db('prashant');
-     return db.collection('inventory');
+        let result= await client.connect();
+        let db=result.db('prashant');
+        return db.collection('inventory');
 }
-module.exports=getconnection;    
+module.exports=getconnection;  
