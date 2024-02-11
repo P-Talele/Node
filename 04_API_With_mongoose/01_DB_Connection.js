@@ -8,14 +8,14 @@ const main = async ()=> {
               name: String
          });
           const farmerModel = mongoose.model('Farmer',farmerSchema);
-         let data = new farmerModel({ name: "Pratik"});
-         let result = await data.save();    // Wait for the promise to resolve
+          let data = new farmerModel({ name: "Pratik"});
+          let result = await data.save();    // Wait for the promise to resolve
           console.log(result);
          } catch (error) {
-           console.error(error);
+            console.error(error);
         }   
       }  
 
-main()
+main()    
 
 
