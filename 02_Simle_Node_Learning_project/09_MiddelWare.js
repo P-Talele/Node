@@ -10,24 +10,24 @@ const reqFilter=((req,res,next)=>{
           res.send("You  Are not Eligible for This File TO access")
     }
       else{
-            next()
+             next()
           }
 }); 
 
 
-       app.get('/login',(req, res)=>{                                  //   not any use middleware 
-        res.send("Welcome To login Page")
+         app.get('/login',(req, res)=>{                                    //   not any use middleware 
+         res.send("Welcome To login Page")
    }) 
 
 
 
 
-         app.get('/help',reqFilter,(req, res)=>{                         //    Single Level Middleware  
+          app.get('/help',reqFilter,(req, res)=>{                          //    Single Level Middleware  
            res.send("Welcome To login Page")
 }) 
 
 
- app.use(reqFilter)                                                  // Applicaltion Level Middleware 
+ app.use(reqFilter)                                                          // Applicaltion Level Middleware 
 
        app.get('/home',(req,res)=>{
        res.send("Welcome To Home Page")
