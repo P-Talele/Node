@@ -8,4 +8,5 @@ const getpath=path.join(__dirname,'1_Public')
          app.get('',(req,res)=>{
          res.sendFile('${getpath}/about.html');
         });
-app.listen(3050) 
+app.listen(3050)    
+   

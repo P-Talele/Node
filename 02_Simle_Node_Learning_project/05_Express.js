@@ -15,4 +15,4 @@ const app=express();
 app.get('/contact',(req, res)=>{
    res="welcome to contact page"
  });
-  app.listen(4040);
+  app.listen(1010);
