@@ -3,12 +3,12 @@ const dbconnection=require('./ConnectionDB')
 const app=express()
 
 
-app.get('/read',async(req,res)=>{
+app.get('/getdata',async(req,res)=>{
            let data=  await dbconnection()
            data=await data.find().toArray();
            res.send(data)
 });
-app.listen(2020)
+app.listen(1010)    
   
  
 

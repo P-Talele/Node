@@ -47,12 +47,10 @@ arr.filter((element)=>{
       console.log("With Arrow Function="+element)
 })
 
- let result= arr.filter((item)=>{
-     return item===3
+  let result= arr.filter((item)=>{
+      return item===3
   })
 console.log("Check how many Time of Repeat 3= "+result)
 
-  
-
 fs.writeFileSync("hallo.txt","how many type inheritance in java ")  // local module 
- console.log(" how many type inheritance in java ")// Global module 
+  console.log(" how many type inheritance in java ")// Global module   
