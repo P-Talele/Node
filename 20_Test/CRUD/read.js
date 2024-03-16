@@ -6,11 +6,15 @@ const PORT=process.env.PORT;
 
 
 app.get('/getuser',async (req,res)=>{
-               let data =await dbconnection();
-               data=  await  data.find().toArray();
-               res.send(data)
-})
+              try {
+                 let    data    = await dbconnection();
+                       data    = await  data.find({}).toArray();
+                       res.send(data) 
 
-  app.listen(PORT,()=>{
-      console.log("Server is  Running on port=",PORT)
-  })
+                 }  catch (error) {
+                  console.log(error)   
+              } 
+       })
+ app.listen(PORT,()=>{
+         console.log("Server is  Running on port=",PORT)
+      })

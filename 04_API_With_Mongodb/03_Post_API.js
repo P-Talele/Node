@@ -7,7 +7,7 @@ app.use(express.json())
 
 app.post('/post',async(req,res)=>{
                  let data =await dbconnection()
-                 let result= await data.insertOne(req.body)
+                 let result= await data.insertOne(req.body.json)
                   res.send(result)
          })
 

@@ -6,7 +6,7 @@ const  port=process.env.PORT;
 
 app.get('/user',(req, res)=>{
      res.send("Welcome to Surat");
-     req.body
+     
 })
 app.listen(port,()=>{
      console.log("server  is  running  on port=",port)
