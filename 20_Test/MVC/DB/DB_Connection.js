@@ -11,8 +11,8 @@ const  Connection=  new  MongoClient(URL);
 {
    try {
           
-                   let     con     =    await   Connection.connect();
-                   let     db       =    con.db(DB_Name); 
+                   let      con      =    await   Connection.connect();
+                   let      db       =    con.db(DB_Name); 
                    return db.collection(COLLECTION_NAME);
 
             }       catch (error){
