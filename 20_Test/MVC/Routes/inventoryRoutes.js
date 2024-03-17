@@ -2,8 +2,14 @@ const express =require('express');
 const router = express.Router();
 const {Inventory}=require('../Controllers/InventoryController.js');
 
- router.get("/",Inventory);
+// const handleInventoryRequest = (req, res, next) => {
+//     // Call the Inventory controller function here
+//     Inventory(req, res, next);
+//   };    
+ 
 
-module.exports=router;  
+ router.get("/",()=>{Inventory});
+
+module.exports=router;
 
 
