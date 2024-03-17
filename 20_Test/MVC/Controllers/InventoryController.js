@@ -16,13 +16,13 @@ const  DB_Connection=require('../DB/DB_Connection');
 
    const  getAllData  = async(req, res)=>{
      try{
-          let result=await  DB_Connection();
-          let data=  await  result.find({}).toArray();
-          res.send(data);
-          if(data.length===0)
-          {
-             console.log("Data Not Found")
-          }
+             let result=await  DB_Connection();
+            let data=  await  result.find({}).toArray();
+            res.send(data);
+            if(data.length===0)
+            {
+                console.log("Data Not Found")
+            }
           }catch(error) {
           throw new Error(400,"Data Not Found"+error)
      }  
@@ -30,7 +30,9 @@ const  DB_Connection=require('../DB/DB_Connection');
    }
 
  
-      module.exports =getAllData;
+      module.exports ={
+             getAllData
+     }
       
 
 
